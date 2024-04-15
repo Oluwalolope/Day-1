@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsl(217, 19%, 38%);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.container {
+    border: 2px solid green;
+    width: min(100% - 2rem, 600px);
+    margin-inline: auto;
+}
+
+/* --------Title--------- */
+h1 {
+    font-weight: 700;  
+    text-align: center;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: center;
+}
+
+/* ---------Input Field------- */
+form {
+    margin-top: 2rem;
+}
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+.input--wrapper {
+    display: flex;
+    gap: .5rem;
+}
+input {
+    padding: .625rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .4rem;
+}
+input[type=text] {
+    flex: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .6rem;
+}
+input[type=submit] {
+    flex: 1;
+    height: 37px;
+    color: white;
+    background-color: rgb(40, 106, 128);
+    box-sizing: border-box;
+}
+input[type=submit]:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+/* --------Output Field---------- */
+.output--wrapper {
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    padding: 1rem;
+    border-radius: 1.4rem;
+    margin-top: 2rem;
+    box-shadow: 2px 2px .5px rgba(0, 0, 0, 0.35);
+}
+img {
+    border-radius: .4rem;
+    width: 95%;
+    height: 300px;
+}
+.openSite {
+    display: inline-block;
+    padding: .625rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .4rem;
+    color: white;
+    background-color: rgb(40, 106, 128);
+    text-decoration: none;
+}
+.openSite:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+/* ---------Attribution--------- */
+.attribution {
+    margin-top: 2rem;
+    text-align: center;
+}
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+.attribution a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
